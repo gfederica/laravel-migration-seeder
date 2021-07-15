@@ -1,0 +1,88 @@
+@import url(https://fonts.googleapis.com/css2?family=Rubik:wght@300;
+
+400;700&display=swap);* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+}
+
+.logo img {
+  width: 150px;
+}
+
+.head {
+  text-align: center;
+}
+
+.head .nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.head .nav ul li {
+  padding: 0 10px;
+  margin: 0 10px;
+}
+
+.head .nav ul li a {
+  text-decoration: none;
+  color: palevioletred;
+}
+
+.head .nav ul li.active {
+  background-color: #48B9B0;
+}
+
+.head .nav ul li.active a {
+  color: white;
+  font-weight: bold;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+main .container h2 {
+  color: #48B9B0;
+  padding: 8px 15px;
+}
+
+main .container .cards {
+  display: flex;
+  justify-content: center;
+}
+
+main .container .cards .card {
+  width: calc(33.3% - 30px);
+  background-color: rgba(128, 128, 128, 0.1);
+  height: 260px;
+  margin: 15px;
+  padding: 20px;
+  position: relative;
+}
+
+main .container .cards .card h3 {
+  margin-bottom: 10px;
+  color: #48B9B0;
+}
+
+main .container .cards .card > *:not(h3) {
+  padding: 4px 0;
+}
+
+main .container .cards .card small {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  color: grey;
+}
+

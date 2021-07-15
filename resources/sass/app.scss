@@ -1,1 +1,88 @@
-//
+@import 'partials/mixins';
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+.container {
+    width: 70%;
+    margin: auto;
+}
+
+.logo img {
+    width: 150px;
+}
+.head {
+    text-align: center;
+
+    & .nav ul {
+        list-style-type: none;
+        @include flex;
+        li {
+            padding:0 10px;
+            margin: 0 10px;
+            a {
+                text-decoration: none;
+                color: palevioletred;
+            }
+
+            &.active {
+                background-color: #48B9B0;
+                & a {
+                    color: white;
+                    font-weight: bold;
+                }
+            }
+        }
+
+    }
+}
+
+
+
+main {
+    @include flex;
+    margin-top: 30px;
+
+    .container {;
+
+        h2 {
+            color: #48B9B0;            
+            padding: 8px 15px;
+        }
+    
+        .cards {
+            @include flex;
+            .card {
+                width: calc(33.3% - 30px);
+                background-color: rgba($color: grey, $alpha: 0.1);
+                height: 260px;
+                margin: 15px;
+                padding: 20px;
+                position: relative;
+
+                h3 {
+                    margin-bottom: 10px;
+                    color: #48B9B0;
+                }
+
+                & > *:not(h3){
+                    padding: 4px 0;
+                }
+
+                small {
+                    position: absolute;
+                    bottom: 8px;
+                    left: 8px;
+                    color: grey;
+                }
+            }
+        }
+     
+    }
+
+    
+ }
