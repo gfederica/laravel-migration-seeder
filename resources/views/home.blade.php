@@ -41,10 +41,3 @@
         </section>
     </body>
 </html>
-
-{{-- 
-"days" => "15",
-"type" => "Crociera",
-"roomAndBoard" => "Pensione Completa",
-"guidedTours" => true,
-"price" => "5000" --}}
